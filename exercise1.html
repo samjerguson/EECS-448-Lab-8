@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+    <div>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"
+               minlength="8">
+    </div>
+
+    <div>
+        <label for="verify">Confirm password:</label>
+        <input type="text" id="verify" name="verify"
+               minlength="8">
+    </div>
+
+    <button id="submit">Validate</button>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+            if (document.getElementById("password").value == document.getElementById("verify").value) {
+                if (document.getElementById("password").value.length < 8 || document.getElementById("verify").value.length < 8) {
+                    alert("Password too short!")
+                }
+                else
+                    alert("Valid password! Thank you.");
+            }
+            else
+            {
+                alert("Passwords do not match!");
+            }
+        });
+       
+    </script>
+</body>
+</html>

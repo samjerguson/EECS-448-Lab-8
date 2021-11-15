@@ -1,0 +1,27 @@
+header {
+    color: black;
+    font-family: arial;
+    font-size: 50pt;
+}
+
+p {
+    color: white; font-family: arial; font-size: 16pt;
+}
+
+body {
+    background-image: url(pic0.PNG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    background-color: black;
+    color: red;
+}
+
+a:hover {
+    background-color: red;
+    color: blue
+}
+
